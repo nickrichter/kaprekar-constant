@@ -1,0 +1,42 @@
+#transcript {
+	
+	p {
+		font-size: 5vw;
+		// white-space: nowrap;
+		
+		&.styled {
+			white-space: nowrap;
+			
+			&:nth-child(1) {
+				font-size: 17.4vw;
+				// font-size: calc(12px + (24 - 12) * ((100vw - 400px) / (800 - 400)));
+				font-weight: $font-weight--bold;
+				letter-spacing: 0.0035em;
+				margin-bottom: -0.1em;
+			}
+			
+			&:nth-child(2) {
+				font-size: 6.75vw;
+				font-weight: $font-weight--medium;
+				// letter-spacing: 0.05em;
+				margin-bottom: 0.1em;
+			}
+			
+			&:nth-child(3) {
+				// font-family: $font-family--secondary;
+				@include font-family--secondary;
+				font-size: 3.25vw;
+				// font-weight: $font-weight--bold;
+				letter-spacing: 0.02em;
+			}
+			
+			&:nth-child(4) {
+				// font-family: $font-family--secondary;
+				@include font-family--secondary;
+				font-size: 3.475vw;
+				// font-weight: $font-weight--bold;
+				letter-spacing: 0.02em;
+			}
+		}
+	}
+}

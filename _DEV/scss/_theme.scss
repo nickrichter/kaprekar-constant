@@ -1,0 +1,190 @@
+// ELEMENTS
+body,
+html {
+	// align-items: center;
+	background: $color--dark;
+	// background: yellow;
+	color: $color--primary;
+	// display: flex;
+	// font-family: $font-family--primary;
+	@include font-family--primary;
+	font-style: normal;
+	font-weight: $font-weight--normal;
+	// min-height: 100%;
+	// justify-content: center;
+	// width: 100%;
+}
+
+body {
+	// align-items: center;
+	// display: flex;
+	// flex-direction: column;
+	font-size: 2.0rem;
+	// justify-content: center;
+	// padding: 0 2rem;
+	padding: 0;
+}
+
+a {
+	color: $color--white;
+	// font-size: 1.2rem;
+	// font-weight: 500;
+	// left: 1rem;
+	// line-height: 1;
+	// position: fixed;
+	text-decoration: none;
+	// top: 1rem;
+	
+	&:hover {
+		// border-bottom: 2px solid $color--white;
+		color: $color--white;
+		// text-decoration: underline;
+		// text-shadow: 0 0 6px $color--black;
+	}
+}
+
+em {
+	font-style: italic;
+}
+
+h1 {
+	color: $color--secondary;
+	font-size: 150%;
+	font-weight: $font-weight--bold;
+	line-height: 1.0;
+	text-transform: uppercase;
+}
+
+p {
+	// color: $color--white;
+	
+	// font-size: 2.0rem;
+	line-height: 1.2;
+	margin: 0;
+	padding: 0;
+	// text-align: justify;
+	// text-shadow: 0px 0px 4px $color--black;
+	
+	&.callout {
+		font-size: 120%;
+		
+		&:last-of-type {
+			margin-bottom: 2rem;
+		}
+	}
+	
+	#transcript & {
+		line-height: 1;
+		margin: 0;
+		padding: 0;
+	}
+	
+	@media screen and(min-width: map-get($breakpoints, "sm")) {
+		// width: 95%;
+		// width: 95vw;
+	}
+	
+	@media screen and(min-width: map-get($breakpoints, "md")) {
+		// width: 90%;
+		// width: 90vw;
+	}
+	
+	@media screen and(min-width: map-get($breakpoints, "lg")) {
+		// width: 80%;
+		// width: 80vw;
+	}
+	
+	@media screen and(min-width: map-get($breakpoints, "xl")) {
+		// width: 75%;
+		// width: 75vw;
+	}
+	
+	@media screen and(min-width: map-get($breakpoints, "xxl")) {
+		// width: 60%;
+		// width: 60vw;
+	}
+}
+
+strong {
+	font-weight: $font-weight--bold;
+}
+
+
+
+
+// LAYOUT/STRUCTURE
+#container {
+	// align-items: center;
+	// background: aqua;
+	// border: 1px solid $color--black;
+	box-sizing: border-box;
+	// display: flex;
+	// flex-direction: column;
+	// height: 100%;
+	// justify-content: center;
+	margin: 0 auto;
+	padding: 0 2vw;
+	// width: 100%;
+	// width: 96vw;
+	width: 100vw;
+	
+	// sm: 576px,
+	// md: 768px,
+	// lg: 992px,
+	// xl: 1200px,
+	// xxl: 1400px
+	
+	@media screen and(min-width: map-get($breakpoints, "sm")) {
+		// width: 95%;
+		// width: 95vw;
+	}
+	
+	@media screen and(min-width: map-get($breakpoints, "md")) {
+		// width: 90%;
+		// width: 90vw;
+	}
+	
+	@media screen and(min-width: map-get($breakpoints, "lg")) {
+		// width: 80%;
+		// width: 80vw;
+	}
+	
+	@media screen and(min-width: map-get($breakpoints, "xl")) {
+		// width: 75%;
+		// width: 75vw;
+	}
+	
+	@media screen and(min-width: map-get($breakpoints, "xxl")) {
+		// width: 60%;
+		// width: 50vw;
+	}
+}
+
+#credits {
+	margin-bottom: 2rem;
+	
+	p {
+		// margin: 0;
+	}
+}
+
+#transcript {
+	// background: darken($color--dark, 5%);
+	// border: 1px solid $color--black;
+	text-align: justify;
+}
+
+
+
+
+// UTILITY CLASSES
+.weight--medium {
+	font-weight: $font-weight--medium;
+}
+
+.font-secondary {
+	// font-family: $font-family--secondary;
+	// font-style: $font-style--secondary;
+	// font-weight: $font-weight--secondary;
+	// white-space: nowrap;
+}

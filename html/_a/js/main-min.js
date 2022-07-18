@@ -1,0 +1,1 @@
+function checkSubjectParameters(e){let o=new Set(e);console.log(o)}function kaprekarConstant(){let e="1111";checkSubjectParameters(e);let o=e.split(""),t=Array.from(o);o.sort(),t.reverse(),console.log(e),console.log(o),console.log(t)}kaprekarConstant();

@@ -1,0 +1,42 @@
+$color--dark: #363432;
+// $color--dark: #14140F;
+$color--primary: #90A19D;
+$color--secondary: #196774;
+$color--accent-1: #F0941F;
+$color--accent-2: #EF6024;
+
+$color--red: #b81004;
+$color--gray: #646464;
+$color--black: #000;
+$color--white: #fff;
+
+// Archer - book, medium, bold
+// $font-family--primary: "Archer A", "Archer B", "Times", serif;
+$font-family--primary: "Whitney A", "Whitney B", sans-serif;
+$font-family--secondary: "Whitney Narrow SSm A", "Whitney Narrow SSm B", sans-serif;
+$font-weight--normal: 500;
+$font-weight--medium: 600;
+$font-weight--bold: 800;
+
+
+
+
+$breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px
+);
+
+
+
+
+@mixin font-family--primary {
+	font-family: $font-family--primary;
+}
+
+@mixin font-family--secondary {
+	font-family: $font-family--secondary;
+}
