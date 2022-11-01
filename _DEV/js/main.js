@@ -1,4 +1,4 @@
-let myInput = 2345;
+let myInput = 4716;
 let calculatedValue = myInput;
 // This is what the "magic number" is, after which the result will always return 6174.
 let kaprekarsConstant = 6174;
@@ -55,14 +55,30 @@ function kaprekarCalculation(myNumber) {
 
 
 
-while(calculatedValue != kaprekarsConstant) {
-	if (checkSubjectUniqueDigits(calculatedValue) == 'pass') {
-		calculatedValue = kaprekarCalculation(calculatedValue);
+
+function crunchNumber(calculatedValue) {
+	while(calculatedValue != kaprekarsConstant) {
+		if (checkSubjectUniqueDigits(calculatedValue) == 'pass') {
+			calculatedValue = kaprekarCalculation(calculatedValue);
+		}
+		else {
+			console.log('Input does not pass unique digits check');
+			break;
+		}
+		
+		console.log('new value', calculatedValue);
 	}
-	else {
-		console.log('Input does not pass unique digits check');
-		break;
-	}
-	
-	console.log('new value', calculatedValue);
 }
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+	runCalculationButton = document.getElementById('button--start-calculation');
+	
+	runCalculationButton.addEventListener('click', function() {
+		// userMenuFlyout.classList.add('active');
+		
+		crunchNumber(1234);
+	}, false);
+});
