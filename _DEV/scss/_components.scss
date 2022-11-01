@@ -1,0 +1,14 @@
+#button--start-calculation {
+	background: $color--primary;
+	border: none;
+	color: $color--dark;
+	display: block;
+	margin-top: 1rem;
+	padding: 0.5rem 5rem;
+	
+	&:hover {
+		background: darken($color--primary, 5%);
+		color: darken($color--dark, 5%);
+		cursor: pointer;
+	}
+}

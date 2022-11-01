@@ -9,13 +9,16 @@
 		<h1>Kaprekar's Constant</h1>
 		
 		<div id="credits">
-			<p><strong>Who:</strong> Kaprekar</p>
-			<p><strong>When:</strong> TKTKTK</p>
+			<p><strong>Who:</strong> Dattatreya Ramchandra Kaprekar</p>
+			<p><strong>When:</strong> 1949</p>
 			<p><strong>What:</strong> TKTKTK</p>
 		</div><!-- /#credits -->
 		
-		<article id="transcript">
-			Try it out
+		<article>
+			<p>Try it out.</p>
+			
+			<input type="text" id="kapInput" name="kapInput" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+			<button id="button--start-calculation">Go</button>
 		</article><!-- /#transcript -->
 	</div><!-- /#container -->
 
