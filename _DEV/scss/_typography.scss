@@ -62,6 +62,17 @@ input#kapInput {
 	font-family: $font-family--numbers;
 }
 
+[id^="error--"] {
+	border: 1px solid $color--accent-2;
+	color: $color--dark;
+	display: inline-block;
+	font-family: $font-family--secondary;
+	font-weight: $font-weight--normal;
+	font-size: 1rem;
+	margin-bottom: 0.5rem;
+	padding: 0.5rem 1rem;
+}
+
 #calculation-steps {
 	// font-family: $font-family--primary;
 	

@@ -19,9 +19,9 @@
 		<section id="input-form">
 			<h2>Try it out.</h2>
 			
+			<span id="error--unique-digits" class="hide">Not enough unique digits</span><!-- /#error--unique-digits -->
+			<span id="error--kaprekars-constant" class="hide">Enter a number other than 6174</span><!-- /#error--kaprekars-constant -->
 			<input type="text" id="kapInput" name="kapInput" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
-			<span id="error--unique-digits" class="hide">Not enough unique digits.</span><!-- /#error--unique-digits -->
-			<span id="error--kaprekars-constant" class="hide">Enter a number other than 6174.</span><!-- /#error--kaprekars-constant -->
 			<button id="button--start-calculation">Go</button>
 		</section><!-- /#input-form -->
 		
