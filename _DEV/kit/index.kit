@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="" ontouchmove>
+<html class="no-js" lang="">
 
 <!-- $PgTitle = Kaprekar's Constant -->
 <!-- @import "document__head.kit" -->
@@ -8,18 +8,36 @@
 	<div id="container">
 		<h1>Kaprekar's Constant</h1>
 		
-		<div id="credits">
+		<section id="credits">
 			<p><strong>Who:</strong> Dattatreya Ramchandra Kaprekar</p>
 			<p><strong>When:</strong> 1949</p>
-			<p><strong>What:</strong> TKTKTK</p>
-		</div><!-- /#credits -->
+			<p><strong>What:</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti reiciendis molestiae tempora nulla ad dignissimos animi natus doloribus doloremque fugit suscipit accusamus voluptatem, mollitia nemo consequuntur! Totam maiores natus laborum!</p>
+			<p>Lorem ipsum dolor sit <strong>amet consectetur adipisicing</strong> elit. Dignissimos saepe ipsam temporibus harum tenetur <em>minus soluta dicta numquam nobis velit eaque mollitia</em>, architecto illum consequuntur esse. Ipsa deserunt impedit tempora!</p>
+			<p>Ab excepturi expedita tenetur in nisi laudantium at, <em>quo dolorem esse ducimus</em>, reiciendis a, neque necessitatibus doloremque. Sequi deserunt eos odit, quam, hic, doloremque voluptate nisi inventore impedit eius labore?</p>
+		</section><!-- /#credits -->
 		
-		<article>
-			<p>Try it out.</p>
+		<section id="input-form">
+			<h2>Try it out.</h2>
 			
 			<input type="text" id="kapInput" name="kapInput" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+			<span id="error--unique-digits" class="hide">Not enough unique digits.</span><!-- /#error--unique-digits -->
+			<span id="error--kaprekars-constant" class="hide">Enter a number other than 6174.</span><!-- /#error--kaprekars-constant -->
 			<button id="button--start-calculation">Go</button>
-		</article><!-- /#transcript -->
+		</section><!-- /#input-form -->
+		
+		<section id="calculation-results" class="hide">
+			<h2>Results</h2>
+			
+			<div id="calculation-steps">
+				<div>
+					<p><strong>Input:</strong></p>
+					<p><strong>Unique digits:</strong></p>
+					<div class="arithmatic">
+						<hr>
+					</div><!-- /#arithmatic -->
+				</div>
+			</div><!-- /#calculation-steps -->
+		</section><!-- /#calculation-results -->
 	</div><!-- /#container -->
 
 	<!-- @import "document__scripts.kit" -->

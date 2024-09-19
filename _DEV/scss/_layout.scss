@@ -1,4 +1,9 @@
 // LAYOUT/STRUCTURE
+section {
+	margin-bottom: 5rem;
+	margin-top: 5rem;
+}
+
 #container {
 	// align-items: center;
 	// background: aqua;
@@ -69,6 +74,59 @@
 	}
 }
 
+#calculation-steps {
+	background: lighten($color--light, 2%);
+	border-radius: 2px;
+	box-shadow: rgba($color--dark, 0.2) 0px 1px 2px 0px, rgba($color--dark, 0.05) 0px 1px 3px 1px;
+	counter-reset: section;
+	display: flex;
+	flex-wrap: wrap;
+	// font-family: $font-family--primary;
+	
+	> div {
+		// background: aqua;
+		padding: 1.5rem;
+		position: relative;
+		
+		&::after {
+			bottom: 0.5em;
+			counter-increment: section;
+			content: "" counter(section) "";
+			opacity: (0.2);
+			position: absolute;
+			right: 1em;
+			// transform: rotate(-15deg) scale(300%);
+		}
+	}
+	
+	p {
+		margin: 0 0 0.5rem;
+	}
+	
+	.arithmatic {
+		display: inline-block;
+		text-align: right;
+	}
+}
+
+.arithmatic {
+	
+	hr {
+		border: none;
+		display: block;
+		height: 2px;
+		margin: 0.5rem 0;
+		padding: 0;
+		width: 100%;
+	}
+	
+	.solution {
+		border: 2px dashed;
+		margin-right: -0.25rem;
+		padding: 0 0.25rem;
+	}
+}
+
 #transcript {
 	// background: darken($color--dark, 5%);
 	// border: 1px solid $color--black;
@@ -89,7 +147,7 @@
 @include media(md) {
 	#container {
 		// background: purple;
-		width: 750px;
+		width: 90vw;
 	}
 	
 	#credits {
@@ -97,7 +155,11 @@
 	}
 }
 
-@include media(lg) {}
+@include media(lg) {
+	#container {
+		width: 75vw;
+	}
+}
 
 @include media(xl) {}
 
