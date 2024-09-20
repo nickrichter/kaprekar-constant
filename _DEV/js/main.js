@@ -66,8 +66,9 @@ function crunchNumber(calculatedValue) {
 	
 	calculationSteps.innerHTML = calculationResultsOutput;
 	setTimeout(function() {
+		myInput.value = '';
 		document.getElementById('calculation-results').scrollIntoView({ behavior: 'smooth' });
-	}, 500);
+	}, 250);
 }
 
 
@@ -85,6 +86,7 @@ document.addEventListener('DOMContentLoaded', function() {
 					calculationResultsOutput = '';
 					crunchNumber(myInputNum);
 					uniqueDigits = '';
+					
 					document.getElementById('calculation-results').classList.remove('hide');
 					document.getElementById('error--unique-digits').classList.add('hide');
 					document.getElementById('error--kaprekars-constant').classList.add('hide');
