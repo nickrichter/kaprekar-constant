@@ -112,7 +112,12 @@ strong {
 	font-weight: $font-weight--bold;
 }
 
-#calculation-steps {
+[id^="error--"] {
+	border-color: $color--accent-2;
+	color: $color--dark;
+}
+
+[id^='calculation-steps--'] {
 	// font-family: $font-family--primary;
 	
 	> div {

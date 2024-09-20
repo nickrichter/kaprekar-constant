@@ -36,6 +36,30 @@
       "oAP" : "\/kit\/_document__scripts.html",
       "oF" : 0
     },
+    "\/kit\/_intro-copy.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/kit\/_intro-copy.html",
+      "oF" : 0
+    },
+    "\/kit\/_observations.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/kit\/_observations.html",
+      "oF" : 0
+    },
+    "\/kit\/_the-process.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/kit\/_the-process.html",
+      "oF" : 0
+    },
     "\/kit\/index.kit" : {
       "cB" : 0,
       "ft" : 2048,

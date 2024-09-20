@@ -1,3 +1,23 @@
+ol {
+	counter-reset: my-awesome-counter;
+	list-style: none;
+	margin: 3rem 0;
+	padding: 0;
+}
+
+ol li {
+	counter-increment: my-awesome-counter;
+	margin-bottom: 1.75rem;
+}
+
+ol li::before {
+	color: $color--accent-2;
+	content: counter(my-awesome-counter) ". ";
+	font-family: $font-family--numbers;
+	font-size: 125%;
+	// font-weight: bold;
+}
+
 input {
 	box-sizing: border-box;
 	display: block;

@@ -24,6 +24,11 @@ body {
 	// padding: 0;
 }
 
+figcaption {
+	font-size: 1rem;
+	font-style: italic;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-family--secondary;
 	font-weight: $font-weight--bold;
@@ -44,11 +49,13 @@ h1 {
 	text-transform: uppercase;
 }
 
-p {
+p,
+li {
 	// color: magenta;
-	font-size: 1.5rem;
-	line-height: 1.2;
+	font-size: 1.25rem;
+	line-height: 1.4;
 	margin-bottom: 0.5rem;
+	max-width: 75ch;
 	// white-space: nowrap;
 }
 
@@ -62,18 +69,19 @@ input#kapInput {
 	font-family: $font-family--numbers;
 }
 
-[id^="error--"] {
-	border: 1px solid $color--accent-2;
-	color: $color--dark;
+[id^='error--'] {
+	border: 1px solid;
 	display: inline-block;
 	font-family: $font-family--secondary;
 	font-weight: $font-weight--normal;
-	font-size: 1rem;
+	font-size: 1.75rem;
+	letter-spacing: 5%;
 	margin-bottom: 0.5rem;
 	padding: 0.5rem 1rem;
+	text-transform: uppercase;
 }
 
-#calculation-steps {
+[id^='calculation-steps--'] {
 	// font-family: $font-family--primary;
 	
 	> div {
@@ -84,12 +92,14 @@ input#kapInput {
 		}
 	}
 	
-	.arithmatic {
+	
+}
+
+.arithmatic {
 		font-family: $font-family--numbers;
 		font-size: 80%;
 		text-align: right;
 	}
-}
 
 .numbers {
 	font-family: $font-family--numbers;

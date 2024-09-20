@@ -1,6 +1,6 @@
 let uniqueDigits, myInputNum;
 let myInput = document.getElementById('kapInput');
-let calculationSteps = document.getElementById('calculation-steps');
+let calculationSteps = document.getElementById('calculation-steps--user-input');
 let calculationResultsOutput = '';
 // This is what the "magic number" is, after which the result will always return 6174.
 let kaprekarsConstant = 6174;
@@ -65,6 +65,9 @@ function crunchNumber(calculatedValue) {
 	}
 	
 	calculationSteps.innerHTML = calculationResultsOutput;
+	setTimeout(function() {
+		document.getElementById('calculation-results').scrollIntoView({ behavior: 'smooth' });
+	}, 500);
 }
 
 
