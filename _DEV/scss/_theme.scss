@@ -15,14 +15,21 @@ html {
 	// width: 100%;
 }
 
+html {
+	// background-image: linear-gradient(rgba($color--dark, .1) 1px, transparent 1px), linear-gradient(90deg, rgba($color--dark, .1) 1px, transparent 1px);
+	// background-position: center 0;
+	// background-size: 1rem 1rem;
+}
+
 body {
 	// align-items: center;
+	background: transparent;
 	// display: flex;
 	// flex-direction: column;
 	// font-size: 2.0rem;
 	// justify-content: center;
 	// padding: 0 2rem;
-	padding: 0;
+	// padding: 0;
 }
 
 a {
@@ -117,8 +124,28 @@ strong {
 	color: $color--dark;
 }
 
+figure {
+	background: lighten($color--light, 2%);
+	background-image: linear-gradient(rgba($color--dark, .05) 1px, transparent 1px), linear-gradient(90deg, rgba($color--dark, .05) 1px, transparent 1px);
+	background-position: top left;
+	background-size: 1rem 1rem;
+	box-shadow: rgba($color--dark, 0.2) 0px 1px 2px 0px, rgba($color--dark, 0.05) 0px 1px 3px 1px;
+}
+
 [id^='calculation-steps--'] {
+	background: lighten($color--light, 2%);
+	background-image: linear-gradient(rgba($color--dark, .05) 1px, transparent 1px), linear-gradient(90deg, rgba($color--dark, .05) 1px, transparent 1px);
+	background-position: top left;
+	background-size: 1rem 1rem;
+	border-radius: 2px;
+	box-shadow: rgba($color--dark, 0.2) 0px 1px 2px 0px, rgba($color--dark, 0.05) 0px 1px 3px 1px;
 	// font-family: $font-family--primary;
+	
+	figure & {
+		background: none;
+		border-radius: 0;
+		box-shadow: none;
+	}
 	
 	> div {
 		
