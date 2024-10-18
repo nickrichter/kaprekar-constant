@@ -5,7 +5,7 @@
 	
 	<p>For example, if the input is 4544 the resulting calculation is <span class="numbers">5444 - 4445 = 999</span>. The result in cases such as these will <em>always</em> be 999. This is also true if the large and small numbers are swapped (using 5455 as the input will yield the same result). You can see why we are in a bit of a pickle at this point. The algorithm depends on an input with 4 digits.</p>
 	
-	<p>To get around this we have to cheat a little bit and add a leading zero, passing along 0999 as our input. By doing this the resulting calculation will be <span class="numbers">9990 - 0999 = 8991</span>, which we can then use to continue the routine.</p>
+	<p>To get around this we have to cheat a little bit and add a leading zero, passing along 0999 as our input. By doing this the resulting calculation will be <span class="numbers">9990 - 0999 = 8991</span>, which we can then use to continue the routine. This also means that the steps to arrive at 6174 for such scenarios will always be the same.</p>
 	
 	<figure>
 		<figcaption>example 2</figcaption>
@@ -48,4 +48,8 @@
 			</div>
 		</div>
 	</figure>
+	
+	<p>There are plenty of funny quirks like that.</p>
+	
+	<p>Try inputting different types of patterns and sequences, then using variations of that pattern/sequece. For example: 1313, 2424, and 3535. Or 1135, 3357, and 5579. As I've been building and iterating on this, I have found myself strangely fascinated by the whole thing and will just spend time entering random numbers to see the steps play out. But I am totally willing to accept that I am the weirdo here.</p>
 </section><!-- /#section--observations -->
