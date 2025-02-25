@@ -176,7 +176,7 @@
     "\/scss\/main.scss" : {
       "aP" : 0,
       "bl" : 0,
-      "co" : 0,
+      "co" : 2,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -184,7 +184,7 @@
       "oA" : 0,
       "oAP" : "\/Users\/nick\/Projects\/Git\/kaprekar-constant\/public_html\/a\/css\/main.css",
       "oF" : 6,
-      "oS" : 3,
+      "oS" : 1,
       "pg" : 0,
       "sct" : 0
     },

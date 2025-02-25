@@ -125,7 +125,7 @@ strong {
 }
 
 figure {
-	background: lighten($color--light, 2%);
+	background: color.scale($color--light, $lightness: 75%);
 	background-image: linear-gradient(rgba($color--dark, .05) 1px, transparent 1px), linear-gradient(90deg, rgba($color--dark, .05) 1px, transparent 1px);
 	background-position: top left;
 	background-size: 1rem 1rem;
@@ -133,7 +133,7 @@ figure {
 }
 
 [id^='calculation-steps--'] {
-	background: lighten($color--light, 2%);
+	background: color.scale($color--light, $lightness: 75%);
 	background-image: linear-gradient(rgba($color--dark, .05) 1px, transparent 1px), linear-gradient(90deg, rgba($color--dark, .05) 1px, transparent 1px);
 	background-position: top left;
 	background-size: 1rem 1rem;
