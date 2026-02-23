@@ -22,39 +22,23 @@ section {
 .container {
 	box-sizing: border-box;
 	margin: 0 auto;
+	max-width: 60ch;
 	padding: 0 2vw;
-	width: 100vw;
-
-	@include mxn.media(sm) {}
-
-	@include mxn.media(md) {}
-
-	@include mxn.media(lg) {}
-
-	@include mxn.media(xl) {}
-
-	@include mxn.media(xxl) {}
 }
 
 #credits {
 	margin-bottom: 2rem;
-	
-	p {}
-	
-	@include mxn.media(md) {}
-}	
+}
 
 [id^='calculation-steps--'] {
 	counter-reset: section;
 	display: flex;
 	flex-wrap: wrap;
-	
-	figure & {}
-	
+
 	> div {
 		padding: 1.5rem;
 		position: relative;
-		
+
 		&::after {
 			bottom: 0.5em;
 			counter-increment: section;
@@ -64,7 +48,7 @@ section {
 			right: 0.5em;
 		}
 	}
-	
+
 	p {
 		margin: 0 0 0.5rem;
 	}
@@ -73,7 +57,7 @@ section {
 .arithmatic {
 	display: inline-block;
 	text-align: right;
-	
+
 	hr {
 		border: none;
 		display: block;
@@ -82,7 +66,7 @@ section {
 		padding: 0;
 		width: 100%;
 	}
-	
+
 	.solution {
 		border: 2px dashed;
 		margin-right: -0.25rem;
@@ -90,56 +74,24 @@ section {
 	}
 }
 
-#transcript {}
-
 .recommendations {
 	margin-top: 1rem;
-	
+
 	p {
 		margin-bottom: 0.5rem;
 	}
-	
+
 	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
-		
+
 		li {
 			margin-bottom: 0.5rem;
-			
+
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-// BREAKPOINTS
-@include mxn.media(sm) {}
-	
-@include mxn.media(md) {
-	
-	.container {
-		width: 90vw;
-	}
-	
-	#credits {}
-}
-
-@include mxn.media(lg) {
-	.container {
-		width: 75vw;
-	}
-}
-
-@include mxn.media(xl) {}
-
-@include mxn.media(xxl) {}

@@ -51,10 +51,10 @@ li {
 p {
 	margin: 0 0 2rem;
 	padding: 0;
-	
+
 	&.callout {
 		font-size: 120%;
-		
+
 		&:last-of-type {
 			margin-bottom: 2rem;
 		}
@@ -88,16 +88,16 @@ input#kapInput {
 }
 
 [id^='calculation-steps--'] {
-	
+
 	> div {
-		
+
 		&::after {
 			font-family:  var.$font-family--numbers;
 			font-size: 4rem;
 		}
 	}
-	
-	
+
+
 }
 
 .arithmatic {
@@ -111,9 +111,9 @@ input#kapInput {
 }
 
 .recommendations {
-	
+
 	ul {
-		
+
 		li {
 			font-size: 0.9rem;
 			line-height: 1;
@@ -125,8 +125,6 @@ input#kapInput {
 
 
 // BREAKPOINTS
-@include mxn.media(sm) {}
-
 @include mxn.media(md) {
 	h1 {
 		font-size: 300%;
@@ -138,7 +136,3 @@ input#kapInput {
 		font-size: 325%;
 	}
 }
-
-@include mxn.media(xl) {}
-
-@include mxn.media(xxl) {}
